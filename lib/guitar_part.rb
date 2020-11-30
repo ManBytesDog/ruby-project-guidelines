@@ -1,0 +1,4 @@
+class GuitarPart
+
+
+end
