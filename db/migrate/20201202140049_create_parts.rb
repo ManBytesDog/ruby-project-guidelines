@@ -5,5 +5,6 @@ class CreateParts < ActiveRecord::Migration[6.0]
       t.string :color 
       t.string :material 
       t.integer :price 
+    end
   end
 end

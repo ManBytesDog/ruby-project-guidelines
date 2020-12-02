@@ -4,5 +4,6 @@ class CreateGuitars < ActiveRecord::Migration[6.0]
       t.integer :user_id 
       t.string :manufacturer 
       t.string :model 
+    end
   end
 end

@@ -1,4 +1,4 @@
-class Guitar
+class Guitar < ActiveRecord::Base
 
 
 end
