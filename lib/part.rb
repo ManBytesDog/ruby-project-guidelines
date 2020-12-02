@@ -1,4 +1,4 @@
-class Part ActiveRecord::Base
+class Part < ActiveRecord::Base
 
 
 end
