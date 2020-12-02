@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_12_02_140049) do
     t.string "part_name"
     t.string "color"
     t.string "material"
+    t.text "description"
     t.integer "price"
   end
 
