@@ -17,4 +17,6 @@ user4 = User.create(name: "Cool Fool")
 
 
 
+
+
 puts "Seed file ran."
