@@ -59,4 +59,4 @@ part31= Part.create(part_name: "Martin Strings",material: "80-20 Bronze",descrip
 
 
 
-puts "Seed file ran."
+puts "Seed file ran today."
