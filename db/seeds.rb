@@ -26,7 +26,7 @@ part1 = Part.create(partname: "Strat Neck-Fretboard",color: "Natural",material: 
 part1 = Part.create(partname: "Tele Neck-Fretboard",color: "Natural",material: "Pau Ferro",price: 250)
 part1 = Part.create(partname: "Tele Neck-Fretboard",color: "Natural",material: "Maple",price: 300)
 part1 = Part.create(partname: "Tele Neck-Fretboard",color: "Natural",material: "Rosewood",price: 550)
-part1 = Part.create(partname: "Pickups",color: "Black",price: 550)
+part1 = Part.create(partname: "Pickups",color: "Black",descsription: "Single Coil, ")
 
 
 
