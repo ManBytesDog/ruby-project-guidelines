@@ -1,5 +1,6 @@
 User.destroy_all
-Guitar.destroy_all 
+Guitar.destroy_all
+Part.destroy_all 
 
 user1 = User.create(name: "Shredder")
 user2 = User.create(name: "Blues Man")
