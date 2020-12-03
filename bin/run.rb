@@ -19,10 +19,14 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
     manufacturer_list = prompt.select("Hey #{selected_user.name} which guitar would you like to order parts for today?", user_guitars_manu)
     puts " "
     if user_guitars_manu 
-      user_guitars_model = selected_user.guitars.map { |guitar| guitar.model} 
-      model_select = prompt.select("Nice Guitars! Which model?", user_guitars_model)
-      # binding.pry
+      guitar_models = selected_user.guitars.select { |guitar| guitar.manufacturer == manufacturer_list}.map { |guitar| guitar.model}
+      model_select = prompt.select("Nice Guitars! Which model?", guitar_models)
     end
+      user_manufacturer = selected_user.guitars.select { |guitar| guitar.manufacturer == manufacturer_list}.map { |guitar| guitar.manufacturer}.join
+
+      puts " "
+      puts "Lets get something for your #{user_manufacturer}!"
+
 
 
   
