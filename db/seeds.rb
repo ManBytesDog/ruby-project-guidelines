@@ -14,6 +14,7 @@ gtr2 = Guitar.create(user_id: user1.id, manufacturer: "Gibson", model: "Les Paul
 gtr3 = Guitar.create(user_id: user3.id, manufacturer: "Fender", model: "Tele")
 gtr4 = Guitar.create(user_id: user2.id, manufacturer: "Martin", model: "Dreadnaught")
 gtr5 = Guitar.create(user_id: user4.id, manufacturer: "Gibson", model: "Les Paul")
+gtr6 = Guitar.create(user_id: user4.id, manufacturer: "Fender", model: "Tele")
 
 part01 = Part.create(manufacturer: "Fender",part_name: "Strat Body",color: "Sunburst Orange",material: "Alder",price: 250)
 part02 = Part.create(manufacturer: "Fender",part_name: "Strat Body",color: "Cherry Red",material: "Alder",price: 250)
