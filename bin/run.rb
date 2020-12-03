@@ -21,8 +21,10 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
     if user_guitars_manu 
       user_guitars_model = selected_user.guitars.map { |guitar| guitar.model} 
       model_select = prompt.select("Nice Guitars! Which model?", user_guitars_model)
-      binding.pry
+      # binding.pry
     end
+
+
   
 
 puts ""
