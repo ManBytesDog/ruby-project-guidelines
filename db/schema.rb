@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_12_02_140049) do
   end
 
   create_table "parts", force: :cascade do |t|
+    t.string "manufacturer"
     t.string "part_name"
     t.string "color"
     t.string "material"
