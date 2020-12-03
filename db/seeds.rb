@@ -47,7 +47,10 @@ part30 = Part.create(manufacturer: "Martin",part_name: "Martin Strings",material
 part31 = Part.create(manufacturer: "Martin",part_name: "Martin Strings",material: "80-20 Bronze",description: "Light Guage", price: 30)
 
 
-
+gp1 = GuitarPart.create(guitar_id: gtr1.id,part_id: part01.id)
+gp2 = GuitarPart.create(guitar_id: gtr1.id,part_id: part16.id)
+gp3 = GuitarPart.create(guitar_id: gtr4.id,part_id: part29.id)
+gp4 = GuitarPart.create(guitar_id: gtr2.id,part_id: part21.id)
 
 
 
