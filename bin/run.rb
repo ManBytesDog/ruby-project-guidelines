@@ -16,7 +16,7 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
   end
   puts " "
     user_guitars_manufacturer = selected_user.guitars.map { |guitar| guitar.manufacturer}
-    manufacturer_list = prompt.select("Hey #{selected_user.name} which guitar would you like to order parts for today?", user_guitars_manufacturer)
+    manufacturer_list = prompt.select("Hey #{selected_user.name}! Which guitar would you like to order parts for today?", user_guitars_manufacturer)
     puts " "
     if user_guitars_manufacturer 
       guitar_models = selected_user.guitars.select { |guitar| guitar.manufacturer == manufacturer_list}.map { |guitar| guitar.model}
@@ -36,10 +36,10 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
         # end
         if Guitar.find_by(manufacturer: user_manufacturer)
           selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
-          selected_guitar.parts.each do |part|
-            # prompt.select(part.manufacturer, part.part_name)
-            puts part.part_name
-          end
+          parts_to_select = selected_guitar.parts.map { |part| part.part_name }
+            prompt.select("Which part do you need?", parts_to_select)
+            
+            
         end
        
      
