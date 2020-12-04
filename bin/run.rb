@@ -28,19 +28,30 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
       puts "Lets get something for your #{user_manufacturer}!"
       puts " "
 
+  
         # if Guitar.find_by(manufacturer: user_manufacturer)
         #   selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
-        #   selected_guitar.parts.each do |part|
-        #     prompt.select(part.manufacturer, part.part_name)
-        #   end
+        #   parts_to_select = selected_guitar.parts.map { |part| part.part_name }
+        #     selected_part = prompt.select(nil, (parts_to_select))
+                  
         # end
+
         if Guitar.find_by(manufacturer: user_manufacturer)
-          selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
-          parts_to_select = selected_guitar.parts.map { |part| part.part_name }
-            prompt.select("Which part do you need?", parts_to_select)
+            selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
+            puts "These are your part choices:"
+            parts_to_select = prompt.select("Please select from the list") do |menu|  
+              selected_guitar.parts.each do |part|
+                menu.choice part.part_name, part
+                
+              end
+            end
+            puts parts_to_select.part_name
+            puts parts_to_select.color
+            puts parts_to_select.material
+            puts parts_to_select.description
+            puts parts_to_select.price
             
-            
-        end
+          end
        
      
     
