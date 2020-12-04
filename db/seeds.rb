@@ -1,7 +1,6 @@
 User.destroy_all
 Guitar.destroy_all
 Part.destroy_all 
-GuitarPart.destroy_all
 
 user1 = User.create(name: "Shredder")
 user2 = User.create(name: "Blues Man")
@@ -52,7 +51,9 @@ part31 = Part.create(manufacturer: "Martin",part_name: "Martin Strings",material
 gp1 = GuitarPart.create(guitar_id: gtr1.id,part_id: part01.id)
 gp2 = GuitarPart.create(guitar_id: gtr1.id,part_id: part16.id)
 gp3 = GuitarPart.create(guitar_id: gtr4.id,part_id: part29.id)
-gp4 = GuitarPart.create(guitar_id: gtr2.id,part_id: part21.id)
+gp4 = GuitarPart.create(guitar_id: gtr4.id,part_id: part27.id)
+gp5 = GuitarPart.create(guitar_id: gtr2.id,part_id: part23.id)
+gp6 = GuitarPart.create(guitar_id: gtr2.id,part_id: part20.id)
 
 
 

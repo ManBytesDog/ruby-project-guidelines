@@ -28,12 +28,20 @@ uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
       puts "Lets get something for your #{user_manufacturer}!"
       puts " "
 
+        # if Guitar.find_by(manufacturer: user_manufacturer)
+        #   selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
+        #   selected_guitar.parts.each do |part|
+        #     prompt.select(part.manufacturer, part.part_name)
+        #   end
+        # end
         if Guitar.find_by(manufacturer: user_manufacturer)
           selected_guitar = Guitar.find_by(manufacturer: user_manufacturer)
           selected_guitar.parts.each do |part|
-            puts part.part_name, part.color, part.material, part.description, part.price
+            # prompt.select(part.manufacturer, part.part_name)
+            puts part.part_name
           end
         end
+       
      
     
   
