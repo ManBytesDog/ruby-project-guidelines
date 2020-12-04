@@ -105,4 +105,4 @@ gp45 = GuitarPart.create(guitar_id: gtr4.id,part_id: part30.id)
 
 
 
-puts "Seed file ran."
+puts "Seed file ran!"
