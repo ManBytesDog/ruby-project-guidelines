@@ -80,7 +80,7 @@ system "clear"
 puts "🎸🎸🎸Welcome back to Guitar Parts Warehouse!🎸🎸🎸"
 puts " "
 puts " "
-uname = prompt.ask("What is your user name?", default: "Mad Guitar Player")
+uname = prompt.ask("What is your user name?", default: "Shredder")
   if User.find_by(name: uname)
     selected_user = User.find_by(name: uname)
   end
